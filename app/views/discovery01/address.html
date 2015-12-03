@@ -1,0 +1,94 @@
+{{<layout}}
+
+{{$pageTitle}}
+  Apply for Employment and Support Allowance
+{{/pageTitle}}
+
+{{$content}}
+<main id="content" role="main">
+  {{>includes/alpha-banner}}
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+  
+      <form action="health-fitforwork" method="#" class="form">
+
+      <a href="#" class="example-back-link">Back</a>
+
+      <h1 class="form-title heading-large">
+        Where you live
+      </h1>
+
+      <p>It is important to process your claim for you to give accurate contact details for your doctor</p>
+
+      <fieldset>
+      
+        <legend class="form-label-bold">The address of where you live now</legend>
+
+        <div class="form-group">
+          <p class="form-label">Address</p>
+          <label class="form-label"><input type="text" class="form-control" id="address-line1"></label>
+          <label class="form-label"><input type="text" class="form-control" id="address-line2"></label>
+          <label class="form-label"><input type="text" class="form-control" id="address-line3"></label>
+        </div>
+        
+        <div class="form-group">
+          <label class="form-label" for="postcode">Postcode</label>
+          <input type="text" class="form-control" id="postcode">
+        </div>
+        
+      </fieldset>
+
+      <div class="form-group">
+        <fieldset class="">
+          <legend class="form-label-bold" for="partner">What type of address is this?</legend>
+          <label class="block-label" for="radio-inline-1">
+            <input id="radio-inline-1" type="radio" name="partner" value="Yes">
+            A place I own or pay the mortgage for
+          </label>
+          <label class="block-label" for="radio-inline-2">
+            <input id="radio-inline-2" type="radio" name="partner" value="No">
+            Rented accomodation
+          </label>
+          <label class="block-label" for="radio-inline-2">
+            <input id="radio-inline-2" type="radio" name="partner" value="No">
+            A care home
+          </label>
+          <label class="block-label" for="radio-inline-2">
+            <input id="radio-inline-2" type="radio" name="partner" value="No">
+            A hospital or hospice
+          </label>
+          <label class="block-label" data-target="other" for="radio-inline-2">
+            <input id="radio-inline-2" type="radio" name="partner" value="No">
+            Something else
+          </label>
+        </fieldset>
+      </div>
+
+      <div class="panel-indent js-hidden" id="other">
+        Other
+      </div>
+
+  
+      <div class="form-group">
+          <label class="form-label-bold" for="full-name">
+          When did you move here?
+          </label>
+          <input type="text" class="form-control" id="full-name" name="full-name">
+      </div>
+ 
+      
+      <div class="form-group">
+        <input type="submit" class="button" value="Continue">
+      </div>
+
+    </div>
+    <div class="column-third">
+    </div>
+  </div>
+
+
+</main><!-- / #page-container -->
+{{/content}}
+
+{{/layout}}
