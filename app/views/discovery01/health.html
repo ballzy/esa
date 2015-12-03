@@ -1,0 +1,82 @@
+{{<layout}}
+
+{{$pageTitle}}
+  Apply for Employment and Support Allowance
+{{/pageTitle}}
+
+{{$content}}
+<main id="content" role="main">
+  {{>includes/alpha-banner}}
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+  
+      <form action="health-fitnote" method="#" class="form">
+
+      <a href="#" class="example-back-link">Back</a>
+
+      <h1 class="form-title heading-large">
+        Health conditions
+      </h1>
+
+      <p>What disabilities, illnesses or ongoing health condiitons do you have?</p>
+        
+      <h2 class="heading-medium">Name of condition</h2>
+
+      <div class="" id="partner-yes">
+
+      <div class="form-group">
+        <input class="form-control" id="who01" type="text">
+      </div>
+
+      <p><a href="#" id="show-payment2">Add another condition</a></p>
+
+  </div>
+
+  <div class="js-hidden" id="payment2">
+
+      <div class="form-group">
+        <input class="form-control" id="who02" type="text">
+      </div>
+
+      <p><a href="#" id="show-payment3">Add another condition</a></p>
+
+  </div>
+
+  <div class="js-hidden" id="payment3">
+
+      <div class="form-group">
+        <input class="form-control" id="who03" type="text">
+      </div>
+      <p><a href="#" id="show-payment4">Add another condition</a></p>
+  </div>
+
+      <div class="form-group">
+        <input type="submit" class="button" value="Continue">
+      </div>
+
+    </div>
+    <div class="column-third">
+    </div>
+  </div>
+
+
+</main><!-- / #page-container -->
+{{/content}}
+
+{{/layout}}
+<script>
+  $(document).ready(function() {
+  
+    $("#show-payment2").click(function() {
+      $("#payment2").show();
+      $("#show-payment2").hide();
+       return false;
+    });
+    $("#show-payment3").click(function() {
+      $("#payment3").show();
+      $("#show-payment3").hide();
+       return false;
+    });
+  });
+</script>
