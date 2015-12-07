@@ -22,16 +22,21 @@
 
       <div class="form-group">
         <fieldset class="inline">
-          <legend class="form-label-bold" for="partner">Are you currently in full-time education or on a full-time apprenticeship?</legend>
-          <label class="block-label" datafor="radio-inline-1">
+          <legend class="form-label-bold heading-large" for="partner">Are you currently in full-time education or on a full-time apprenticeship?</legend>
+          <label class="block-label" data-target="fulltime" for="radio-inline-1">
             <input id="radio-inline-1" type="radio" name="partner" value="Yes">
             Yes
           </label>
-          <label class="block-label" data-target="fitnote" for="radio-inline-2">
+          <label class="block-label" data-target="no-edu" for="radio-inline-2">
             <input id="radio-inline-2" type="radio" name="partner" value="No">
             No
           </label>
         </fieldset>
+      </div>
+
+      <div class="panel-indent js-hidden" id="fulltime">
+        <p>You may not be eligible for Employment and Support Allowance if you are in full-time education or on a full-time apprenticeship</p>
+        </p>
       </div>
 
       <div class="panel-indent js-hidden" id="fitnote">
