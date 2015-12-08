@@ -23,42 +23,83 @@
       <div class="form-group">
         <fieldset class="">
           <legend class="form-label-bold heading-large" for="partner">What is you employment status?</legend>
-          <label class="block-label" data-target="fulltime" for="radio-inline-1">
+          <p class="hint-text">If you are part-time employed select 'Employed or self-employed'.</p>
+          <label class="block-label" data-target="working" for="radio-inline-1">
             <input id="radio-inline-1" type="radio" name="partner" value="Yes">
-            Employed
+            Employed or self-employed
           </label>
-          <label class="block-label" data-target="no-edu" for="radio-inline-2">
-            <input id="radio-inline-2" type="radio" name="partner" value="No">
-            Self-employed
-          </label>
-          <label class="block-label" data-target="no-edu" for="radio-inline-2">
+          <label class="block-label" for="radio-inline-2">
             <input id="radio-inline-2" type="radio" name="partner" value="No">
             Unemployed
           </label>
         </fieldset>
       </div>
 
-      <div class="panel-indent js-hidden" id="fulltime">
-        <p>You may not be eligible for Employment and Support Allowance if you are in full-time education or on a full-time apprenticeship</p>
-        </p>
-      </div>
+      
 
-      <div class="panel-indent js-hidden" id="no-edu">
+      <div class="panel-indent js-hidden" id="working">
         <fieldset class="inline">
-          <legend class="form-label-bold" for="part">Have you recently finished a course of full-time education?</legend>
-          <label class="block-label" data-target="recent" for="radio-inline-3">
+          <legend class="form-label-bold" for="part">Are you still working?</legend>
+          <label class="block-label" data-target="yes-working" for="radio-inline-3">
             <input id="radio-inline-3" type="radio" name="part" value="Yes">
             Yes
           </label>
-          <label class="block-label" for="radio-inline-4">
+          <label class="block-label" data-target="no-working" for="radio-inline-4">
             <input id="radio-inline-4" type="radio" name="part" value="No">
             No
           </label>
         </fieldset>
 
-        <div class="js-hidden" id="recent" style="margin-top: 15px;">
-            <fieldset class="form-group">
-              <legend class="form-label-bold">When did it end?</legend>
+        <div class="js-hidden" id="yes-working" style="margin-top: 15px;">
+          <div class="form-group">
+            <label class="form-label-bold" for="hours">
+              How many hours a week are you working at present?
+            </label>
+            <input type="text" class="form-control-1-2" id="hours" name="hours">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label-bold" for="how-much">
+              How much do you earn a week at present?
+            </label>
+            <input type="text" class="form-control-1-2" id="how-much" name="how-much">
+          </div>
+
+          <div class="form-group" style="margin-top: 15px;">
+            <label class="form-label-bold" for="surgery-name">Company name</label>
+            <input type="text" class="form-control" id="surgery-name">
+          </div>
+
+          <div class="form-group" style="margin-top: 15px;">
+            <p class="form-label-bold">Company Address</p>
+            <label class="form-label" style="margin: 4px 0;"><input type="text" class="form-control" id="address-line1"></label>
+            <label class="form-label" style="margin: 4px 0;"><input type="text" class="form-control" id="address-line2"></label>
+            <label class="form-label" style="margin: 4px 0;"><input type="text" class="form-control" id="address-line3"></label>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="postcode">Postcode</label>
+            <input type="text" class="form-control" id="postcode">
+          </div>
+
+        </div>
+
+        <div class="js-hidden" id="no-working" style="margin-top: 15px;">
+          <fieldset class="inline">
+            <legend class="form-label-bold" for="ssp">Have you received Statuory Sick Pay?</legend>
+            <label class="block-label" data-target="yes-ssp" for="radio-inline-5">
+              <input id="radio-inline-5" type="radio" name="ssp" value="Yes">
+              Yes
+            </label>
+            <label class="block-label" data-target="no-ssp" for="radio-inline-6">
+              <input id="radio-inline-6" type="radio" name="ssp" value="No">
+              No
+            </label>
+          </fieldset>
+
+          <div class="form-group js-hidden" id="yes-ssp" style="margin-top: 15px;">
+            <fieldset>
+              <legend class="form-label-bold">What date will or did your Statutory Sick Pay finish?</legend>
               
               <div class="form-date">
                 <p class="form-hint">DD MM YYYY</p>
@@ -77,23 +118,17 @@
                 </div>
               </div>
             </fieldset>
-
-            <div class="form-group" style="margin-top: 15px;">
-              <label class="form-label-bold" for="surgery-name">Course name</label>
-              <input type="text" class="form-control" id="surgery-name">
-            </div>
-
-            <div class="form-group" style="margin-top: 15px;">
-              <p class="form-label-bold">Address of School or University</p>
-              <label class="form-label" style="margin: 4px 0;"><input type="text" class="form-control" id="address-line1"></label>
-              <label class="form-label" style="margin: 4px 0;"><input type="text" class="form-control" id="address-line2"></label>
-              <label class="form-label" style="margin: 4px 0;"><input type="text" class="form-control" id="address-line3"></label>
-            </div>
           </div>
+
+          <div class="js-hidden" id="no-ssp" style="margin-top: 15px;">
+            <p>You may not be eligible for Statutory Sick Pay. Contact your employer immediately to see if you are entitled to it.</p>
+            </p>
+          </div>
+
+        </div>
+
       </div>
 
-
-      
       <div class="form-group">
         <input type="submit" class="button" value="Continue">
       </div>
