@@ -17,36 +17,27 @@
       <a href="#" class="example-back-link">Back</a>
 
       <h1 class="form-title heading-large">
-        Savings
+        Health insurance
       </h1>
 
       <div class="form-group">
-        <fieldset class="">
-          <legend class="form-label-bold heading-large" for="partner">How much money do you have saved in total?</legend>
-          <label class="block-label" for="radio-inline-1">
+        <fieldset class="inline">
+          <legend class="form-label-bold heading-large" for="partner">Do you have health insurance?</legend>
+          <label class="block-label" data-target="between" for="radio-inline-1">
             <input id="radio-inline-1" type="radio" name="partner" value="Yes">
-            Under £6,000
+            Yes
           </label>
-          <label class="block-label" data-target="between" for="radio-inline-2">
+          <label class="block-label" for="radio-inline-2">
             <input id="radio-inline-2" type="radio" name="partner" value="No">
-            Between £6,000 and £16,000
-          </label>
-          <label class="block-label" data-target="over" for="radio-inline-3">
-            <input id="radio-inline-3" type="radio" name="partner" value="No">
-            Over £16,000
+            No
           </label>
         </fieldset>
-      </div>
-
-      <div class="panel-indent js-hidden" id="over">
-        <p>If you have savings over £16,000 you are not eligible for Employment and Support Allowance.</p>
-        </p>
       </div>
 
 
       <div class="panel-indent js-hidden" id="between">
         <div class="form-group">
-          <label class="form-label-bold" for="surgery-name">Give more details of your savings</label>
+          <label class="form-label-bold" for="surgery-name">Give more details about your health insurance</label>
           <textarea class="form-control" id="surgery-name" rows="7"></textarea>
         </div>
       </div>
