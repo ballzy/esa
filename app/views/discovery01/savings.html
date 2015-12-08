@@ -17,58 +17,39 @@
       <a href="#" class="example-back-link">Back</a>
 
       <h1 class="form-title heading-large">
-        Pensions
+        Savings
       </h1>
 
       <div class="form-group">
         <fieldset class="inline">
-          <legend class="form-label-bold heading-large" for="partner">Are you getting a pension other than your state pension?</legend>
-          <label class="block-label" data-target="pension" for="radio-inline-1">
+          <legend class="form-label-bold heading-large" for="partner">How much money do you have saved in total?</legend>
+          <label class="block-label" for="radio-inline-1">
             <input id="radio-inline-1" type="radio" name="partner" value="Yes">
-            Yes
+            Under £6,000
           </label>
-          <label class="block-label" data-target="no-pension" for="radio-inline-2">
+          <label class="block-label" data-target="between" for="radio-inline-2">
             <input id="radio-inline-2" type="radio" name="partner" value="No">
-            No
+            Between £6,000 and £16,000
+          </label>
+          <label class="block-label" data-target="over" for="radio-inline-3">
+            <input id="radio-inline-3" type="radio" name="partner" value="No">
+            Over £16,000
           </label>
         </fieldset>
       </div>
 
-
-      <div class="panel-indent js-hidden" id="no-pension">
-        <fieldset class="inline">
-          <legend class="form-label-bold" for="part">Will you be getting a pension in the next 6 months?</legend>
-          <label class="block-label" data-target="pension" for="radio-inline-3">
-            <input id="radio-inline-3" type="radio" name="part" value="Yes">
-            Yes
-          </label>
-          <label class="block-label" for="radio-inline-4">
-            <input id="radio-inline-4" type="radio" name="part" value="No">
-            No
-          </label>
-        </fieldset>
-      </div>
-
-      <div class="panel-indent js-hidden" id="pension" style="margin-top: 15px;">
-        <div class="form-group" style="margin-top: 15px;">
-          <label class="form-label-bold" for="surgery-name">Who is your pension provider?</label>
-          <input type="text" class="form-control" id="surgery-name">
-        </div>
-
-        <div class="form-group" style="margin-top: 15px;">
-          <p class="form-label-bold">Pension provider address</p>
-          <label class="form-label" style="margin: 4px 0;"><input type="text" class="form-control" id="address-line1"></label>
-          <label class="form-label" style="margin: 4px 0;"><input type="text" class="form-control" id="address-line2"></label>
-          <label class="form-label" style="margin: 4px 0;"><input type="text" class="form-control" id="address-line3"></label>
-        </div>
-
-        <div class="form-group form-group-year">
-          <label class="form-label-bold" for="how-much">How much do you get from your pension after any deductions?</label>
-          &pound; <input type="text" class="form-control" id="how-much" name="dob-year">
-        </div>
+      <div class="panel-indent js-hidden" id="over">
+        <p>If you have savings over £16,000 you are not eligible for Employment and Support Allowance.</p>
+        </p>
       </div>
 
 
+      <div class="panel-indent js-hidden" id="between">
+        <div class="form-group">
+          <label class="form-label-bold" for="surgery-name">Give more details of your savings</label>
+          <textarea class="form-control" id="surgery-name"></textarea>
+        </div>
+      </div>
       
       <div class="form-group">
         <input type="submit" class="button" value="Continue">
