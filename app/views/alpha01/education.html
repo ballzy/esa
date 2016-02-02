@@ -1,0 +1,106 @@
+{{<layout}}
+
+{{$pageTitle}}
+  Apply for Employment and Support Allowance
+{{/pageTitle}}
+
+{{$content}}
+<main id="content" role="main">
+
+{{>includes/alpha-banner}}
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+  
+      <form action="work" method="#" class="form">
+
+      <a href="household" class="example-back-link">Back</a>
+
+      <h1 class="form-title heading-large">
+        Education
+      </h1>
+
+      <div class="form-group">
+        <fieldset class="inline">
+          <legend class="form-label-bold heading-large" for="partner">Are you currently in full-time education or on a full-time apprenticeship?</legend>
+          <label class="block-label" data-target="fulltime" for="radio-inline-1">
+            <input id="radio-inline-1" type="radio" name="partner" value="Yes">
+            Yes
+          </label>
+          <label class="block-label" data-target="no-edu" for="radio-inline-2">
+            <input id="radio-inline-2" type="radio" name="partner" value="No">
+            No
+          </label>
+        </fieldset>
+      </div>
+
+      <div class="panel-indent js-hidden" id="fulltime">
+        <p>You may not be eligible for Employment and Support Allowance if you are in full-time education or on a full-time apprenticeship</p>
+        </p>
+      </div>
+
+      <div class="panel-indent js-hidden" id="no-edu">
+        <fieldset class="inline">
+          <legend class="form-label-bold" for="part">Have you recently finished a course of full-time education?</legend>
+          <label class="block-label" data-target="recent" for="radio-inline-3">
+            <input id="radio-inline-3" type="radio" name="part" value="Yes">
+            Yes
+          </label>
+          <label class="block-label" for="radio-inline-4">
+            <input id="radio-inline-4" type="radio" name="part" value="No">
+            No
+          </label>
+        </fieldset>
+
+        <div class="js-hidden" id="recent" style="margin-top: 15px;">
+            <fieldset class="form-group">
+              <legend class="form-label-bold">When did it end?</legend>
+              
+              <div class="form-date">
+                <p class="form-hint">DD MM YYYY</p>
+                
+                <div class="form-group form-group-day">
+                  <label for="dob-day">Day</label>
+                  <input type="text" class="form-control" id="dob-day" maxlength="2" name="dob-day">
+                </div>
+                <div class="form-group form-group-month">
+                  <label for="dob-month">Month</label>
+                  <input type="text" class="form-control" id="dob-month" maxlength="2" name="dob-month">
+                </div>
+                <div class="form-group form-group-year">
+                  <label for="dob-year">Year</label>
+                  <input type="text" class="form-control" id="dob-year" maxlength="4" name="dob-year">
+                </div>
+              </div>
+            </fieldset>
+
+            <div class="form-group" style="margin-top: 15px;">
+              <label class="form-label-bold" for="surgery-name">Course name</label>
+              <input type="text" class="form-control" id="surgery-name">
+            </div>
+
+            <div class="form-group" style="margin-top: 15px;">
+              <p class="form-label-bold">Address of School or University</p>
+              <label class="form-label" style="margin: 4px 0;"><input type="text" class="form-control" id="address-line1"></label>
+              <label class="form-label" style="margin: 4px 0;"><input type="text" class="form-control" id="address-line2"></label>
+              <label class="form-label" style="margin: 4px 0;"><input type="text" class="form-control" id="address-line3"></label>
+            </div>
+          </div>
+      </div>
+
+
+      
+      <div class="form-group">
+        <input type="submit" class="button" value="Continue">
+      </div>
+
+    </div>
+    <div class="column-third">
+    </div>
+  </div>
+
+
+</main><!-- / #page-container -->
+{{/content}}
+
+{{/layout}}

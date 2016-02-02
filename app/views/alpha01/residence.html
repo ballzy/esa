@@ -1,0 +1,49 @@
+{{<layout}}
+
+{{$pageTitle}}
+  Apply for Employment and Support Allowance
+{{/pageTitle}}
+
+{{$content}}
+<main id="content" role="main">
+
+{{>includes/alpha-banner}}
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+  
+      <form action="address" method="#" class="form">
+
+      <a href="nationality" class="example-back-link">Back</a>
+
+      <h1 class="form-title heading-large">
+        Residence
+      </h1>
+
+      <div class="form-group">
+        <fieldset class="inline">
+          <legend class="form-label-bold" for="partner">In the last 2 years have you been out of the UK for more than 4 weeks at a time?</legend>
+          <label class="block-label" for="radio-inline-1">
+            <input id="radio-inline-1" type="radio" name="partner" value="Yes">
+            Yes
+          </label>
+          <label class="block-label" for="radio-inline-2">
+            <input id="radio-inline-2" type="radio" name="partner" value="No">
+            No
+          </label>
+        </fieldset>
+      </div>
+      
+      <div class="form-group">
+        <input type="submit" class="button" value="Continue">
+      </div>
+
+    </div>
+    <div class="column-third">
+    </div>
+  </div>
+
+</main><!-- / #page-container -->
+{{/content}}
+
+{{/layout}}
